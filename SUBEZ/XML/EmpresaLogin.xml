@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Companys>
+  <Company>
+    <CompanyName>CIMAT</CompanyName>
+    <CompanyPassWord>CIMAT</CompanyPassWord>
+    <CompanyRFC>CIMAR87DE87</CompanyRFC>
+    <CompanyMail>cimat@cimat.com</CompanyMail>
+    <CompanyType>Empresa</CompanyType>
+  </Company>
+  <Company>
+    <CompanyName>SE</CompanyName>
+    <CompanyPassWord>SE</CompanyPassWord>
+    <CompanyRFC>SE989SDS</CompanyRFC>
+    <CompanyMail>SE@cimat.com</CompanyMail>
+    <CompanyType>Empresa</CompanyType>
+  </Company>
+</Companys>

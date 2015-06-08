@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Users>
+  <User>
+    <UserName>Luis</UserName>
+    <UserPassWord>XCosa</UserPassWord>
+    <UserCurp>LDAS98989SS</UserCurp>
+    <UserMail>xCosa@cimat.com</UserMail>
+    <UserType>Beneficiario</UserType>
+  </User>
+  <User>
+    <UserName>Blanco</UserName>
+    <UserPassWord>Tatoo</UserPassWord>
+    <UserCurp>LB878788DTE</UserCurp>
+    <UserMail>tatoo@cimat.com</UserMail>
+    <UserType>Beneficiario</UserType>
+  </User>
+  <User>
+    <UserName>Faleg</UserName>
+    <UserPassWord>Fal</UserPassWord>
+    <UserCurp>PEMF870816S</UserCurp>
+    <UserMail>peronson@cimat.com</UserMail>
+    <UserType>Beneficiario</UserType>
+  </User>
+</Users>
