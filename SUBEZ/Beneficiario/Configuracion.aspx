@@ -56,7 +56,11 @@
          <div class="navigation-block affix-top"> 
                 <section class="usuario">
                      <figure> <img src="../Image/perfil.jpg">
-                     <figcaption> <strong><a class="">Luis Angel Hernandez Lazaro</a></strong> <em>HELL920809HVZRZS07</em> <em>Aspirante</em> </figcaption>
+                     <figcaption> 
+                        <strong><a class=""><asp:Label ID="lblNombre" runat="server" Text="Luis Angel Hernández Lázaro"></asp:Label></a></strong> 
+                        <em><asp:Label ID="lblcurp" runat="server" Text="HELL920809HVZRZS07"></asp:Label></em>
+                        <em><asp:Label ID="lbltipo" runat="server" Text="Aspirante"></asp:Label></em> 
+                     </figcaption>
                    </figure>
                 </section>
                      <nav class="main-navigation" role="navigation">

@@ -59,7 +59,10 @@
             <div class="navigation-block affix-top"> 
                 <section class="usuario">
                   <figure> <img src="../Image/perfil.jpg">
-                    <figcaption> <strong><a class="">Luis Angel Hernandez Lazaro</a></strong> <em>HELL920809HVZRZS07</em> <em>Aspirante</em> </figcaption>
+                    <figcaption><strong><a class=""><asp:Label ID="lblNombre" runat="server" Text="Luis Angel Hernández Lázaro"></asp:Label></a></strong> 
+                     <em><asp:Label ID="lblcurp" runat="server" Text="HELL920809HVZRZS07"></asp:Label></em>
+                     <em><asp:Label ID="lbltipo" runat="server" Text="Aspirante"></asp:Label></em> 
+                      </figcaption>
                   </figure>
                 </section>
                     <nav class="main-navigation" role="navigation">
@@ -94,20 +97,8 @@
                   <h4>Mis Solicitudes</h4>
                   <hr>
                </header>
-               <input type="hidden" value="" id="compati">     
                <div class="large-12 columns separa_v" id="mis_s">
-                  <table class="table responsive large-12 columns">
-                     <thead>
-                        <tr>
-                           <th width="50%">Programa</th>
-                           <th width="25%">Vigencia</th>
-                           <th width="25%">Estatus</th>
-                        </tr>
-                     </thead>
-                     <tbody id="all-sol"><tr><td>CERTIFICACIÓN PHP</td><td>2014/2015</td><td><span class="label label-important" id="224">Programa Finalizado con Éxito</span></td></tr><tr><td>
-                         CERTIFICACIÓN C#</td><td>2014/2015</td><td><span class="captura label label-warning" id="140">Solicitud en Progreso</span></td></tr><tr><td>
-                         CERTIFICACIÓN HTML</td><td>2013/2014</td><td><span class="label label-important" id="55">Programa Finalizado con Éxito</span></td></tr></tbody>
-                  </table>
+                  
                </div>
             </div>
             <div class="large-12 columns separa_v borde_contenedor">

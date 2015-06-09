@@ -41,12 +41,10 @@
                   <figure> 
                   <img src="http://www.subes.sep.gob.mx/api/perfiles/foto/848690b44797674b1b2315cd70979644/3rV7/perfil.jpg" >
                   <figcaption> 
-                     <strong>
-                        <a class="">Luis Angel Hernandez Lazaro</a>
-                     </strong> 
-                     <em>HELL920809HVZRZS07</em> 
-                     <em>Aspirante</em> 
-                  </figcaption>
+<strong><a class=""><asp:Label ID="lblNombre" runat="server" Text="Luis Angel Hernández Lázaro"></asp:Label></a></strong> 
+                     <em><asp:Label ID="lblcurp" runat="server" Text="HELL920809HVZRZS07"></asp:Label></em>
+                     <em><asp:Label ID="lbltipo" runat="server" Text="Aspirante"></asp:Label></em> 
+                                       </figcaption>
                </figure>
             </section>
             <nav class="main-navigation" role="navigation" >
