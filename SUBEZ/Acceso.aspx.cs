@@ -51,15 +51,17 @@ namespace SeZac
             try
             {
                 document = new XmlDocument();
-                document.Load("../../../../../XML/BeneficiarioLogin.xml");
+                document.Load("../../../../../XML/EmpresaLogin.xml");
+                nodo = document.GetElementsByTagName("UserId");
+                String strID = nodo[0].InnerText.ToString();
                 nodo = document.GetElementsByTagName("UserName");
                 String strUser = nodo[0].InnerText.ToString();
                 nodo = document.GetElementsByTagName("UserPassWord");
                 String strPass = nodo[0].InnerText.ToString();
-                if (txtPassEmpresa.Text == strPass && txtEmpresa.Text != strUser)
+                if (txtPassEmpresa.Text == strPass && txtEmpresa.Text == strUser)
                 {
-                    Session["Usuario"] = "1";
-                    Response.Redirect("~/IPersonal1.aspx");
+                    Session["Usuario"] = strID;
+                    Response.Redirect("~/Beneficiario/IPersonal1.aspx");
                 }
                 else
                 {
@@ -93,14 +95,15 @@ namespace SeZac
             try
             {
                 document = new XmlDocument();
-                document.Load("../../../../../XML/EmpresaLogin.xml");
-                nodo = document.GetElementsByTagName("UserName");
+                document.Load("../../../../../XML/BeneficiarioLogin.xml");
+                nodo = document.GetElementsByTagName("UserCurp");
                 String strUser = nodo[0].InnerText.ToString();
                 nodo = document.GetElementsByTagName("UserPassWord");
                 String strPass = nodo[0].InnerText.ToString();
-                if (txtPassWord.Text == strPass && txtCURP.Text != strUser)
+                if (txtPassWord.Text == strPass && txtCURP.Text == strUser)
                 {
-                    Response.Redirect("~/default.aspx");
+                    Session["Usuario"] = "1";
+                    Response.Redirect("~/Beneficiario/IPersonal1.aspx");
                 }
                 else
                 {

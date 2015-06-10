@@ -77,10 +77,10 @@
                </header>
                 <div class="small-12 medium-6 large-6 columns separa_v">
                     <asp:TextBox ID="txtCURP" class="large-12.columns" onkeyup="this.value=this.value.toUpperCase();"
-                        MaxLength="18" placeholder="CURP" runat="server"></asp:TextBox>
+                        MaxLength="18" placeholder="CURP" runat="server" ></asp:TextBox>
                 </div>
                 <div class="small-12 medium-6 large-6 columns separa_v">
-                    <asp:TextBox ID="txtPassWord" class="large-12.columns" placeholder="CONTRASEÑA" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtPassWord" class="large-12.columns" placeholder="CONTRASEÑA" runat="server" TextMode="Password"></asp:TextBox>
                     &nbsp;</div>
                 <div class="small-12 medium-12 large-12 columns separa_v">
                     <asp:Button ID="btnLogin" class="btn btn-flat btn-primary button expand" runat="server"
@@ -116,7 +116,7 @@
                 </div>
                 <div class="small-12 medium-6 large-6 columns separa_v">
                     <asp:TextBox ID="txtPassEmpresa" class="large-12.columns"  name="lg-pass_inst"
-                        placeholder="CONTRASEÑA" runat="server"></asp:TextBox>
+                        placeholder="CONTRASEÑA" runat="server" TextMode="Password"></asp:TextBox>
                 </div>
                 <div class="small-12 medium-12 large-12 columns separa_v">
                     <asp:Button ID="btnLoginEmpresa" Text="Inicia sesión" 

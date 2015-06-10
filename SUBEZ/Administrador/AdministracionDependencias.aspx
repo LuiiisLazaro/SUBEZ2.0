@@ -1,12 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="anioFiscal.aspx.cs" Inherits="SUBEZ.Administrador.anioFiscal" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdministracionDependencias.aspx.cs" Inherits="SUBEZ.Administrador.Dependencias" %>
 
-<%@ Register assembly="DevExpress.Web.v15.1, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web" tagprefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v15.1, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web" TagPrefix="dx" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-     <title>SUBEZ</title>
+<head runat="server">  
+    <title>SUBEZ</title>
     <meta name="description" content="">
     <meta name="author" content="Blue Team CIMAT">
     <meta name="robots" content="index, follow">
@@ -45,25 +46,18 @@
     <script type="text/javascript" charset="UTF-8" src="./SUBEZ_files/common.js"></script>
     <script type="text/javascript" charset="UTF-8" src="./SUBEZ_files/util.js"></script>
     <script type="text/javascript" charset="UTF-8" src="./SUBEZ_files/stats.js"></script>
-<script language="javascript" type="text/javascript">
-// <![CDATA[
 
-function upload-foto_onclick() {
-
-}
-
-// ]]>
-</script>
 </head>
 <body>
     <form id="form1" runat="server">
-     <header class="row contenedor_gral" id="arriba">
+ 
+    <header class="row contenedor_gral" id="arriba">
          <div class="large-3">
             <img src="../Image/SeZac.jpg">
          </div>
          <hr>
-     
-     
+      </header>
+
        <nav class="main-navigation" role="navigation">
             <ul>
                   <li class="current"><a href="InfomarcionPersonal.aspx" class="no-submenu"><span class="awe-user"></span>Dependencia</a></li>
@@ -73,24 +67,54 @@ function upload-foto_onclick() {
                   <li class="current"><a href="#" class="no-submenu" id="logout"><span class="awe-signout"></span>Cerrar sesión</a></li>
             </ul>
         </nav>
+        <hr>
         </header>
+   
       <header>
-                     <h2>Alta Años Fiscales</h2>
+                     <h2> Administracion Dependencias</h2>
                      <hr>
-                  </header>
+       </header>
+       
                     <div id="holder" class="draag">
-                        <div style="margin-top: 30px; margin-bottom: auto;">
-                         <table>
+                        <div style="margin-top: 25px; margin-bottom: auto;">
+                     <label>
+                    Busqueda
+                    <input type="text" placeholder="QUE BUSCAS?" readonly />
+                </label>    
+                        
+                    <label class="control-label">
+                    <span class="info-pop" title="¿Qué significa?" data-content="Estado civil del aspirante.">
+                    </span>Criterio</label>
+                <div class="controls">
+                    <select id="edo_civ" class="input-xlarge rq" onclick="return edo_civ_onclick()">
+                        <option value=" ">Selecciona Dependencia</option>
+                        <option value="1">Dependencia 1</option>
+                        <option value="2">Dependencia 2</option>
+                        <option value="3">Dependencia 3</option>
+                        <option value="4">Dependencia 4</option>
+                        <option value="5">Dependencia 5</option>
+                        <option value="6">Dependencia 6</option>
+                    </select>
+                </div>
+                <hr>
+                        <button class="btn btn-flat btn-primary button expand" id="Button1" onclick="return upload-foto_onclick()">
+                                Agregar Dependencias</button>
+                        <button class="btn btn-flat btn-primary button expand" id="Button2" onclick="return upload-foto_onclick()">
+                                Actualizar Dependencias</button>
+                        <button class="btn btn-flat btn-primary button expand" id="Button3" onclick="return upload-foto_onclick()">
+                                Guardar cambios</button>
+
+                        <table>
                             <tr>
                                 <td>
                             <dx:ASPxGridView ID="ASPxGridView1" runat="server" Theme="DevEx" 
                                     EnableTheming="True" AutoGenerateColumns="False">
                                 <Columns>
-                                    <dx:GridViewDataColumn Caption="Inicio de Año" FieldName="UserName" Settings-AllowSort="True"   VisibleIndex="0">
+                                    <dx:GridViewDataColumn Caption="Nombre" FieldName="UserName" Settings-AllowSort="True"   VisibleIndex="0">
                                     </dx:GridViewDataColumn>
                                 </Columns>
                                 <Columns>
-                                    <dx:GridViewDataColumn Caption="Fin de Año" FieldName="UserName" Settings-AllowSort="True"   VisibleIndex="0">
+                                    <dx:GridViewDataColumn Caption="Telefono" FieldName="UserName" Settings-AllowSort="True"   VisibleIndex="0">
                                     </dx:GridViewDataColumn>
                                 </Columns>
                                     <Settings ShowFilterRow="True" />
@@ -98,9 +122,8 @@ function upload-foto_onclick() {
                                 </td>
                             </tr>
                         </table>
-                       
-                            <button class="btn btn-flat btn-primary button expand" id="upload-foto" onclick="return upload-foto_onclick()">
-                                Agregar Año Fiscal</button>
+                           
+                           
                         </div>
                     </div>
                     <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
@@ -108,7 +131,7 @@ function upload-foto_onclick() {
                         </div>
                     </div>
                     <footer class="info" style="margin: 0px;">
-                    
+                     <--Tamaño recomendado 200 x 200 pixeles.>
                   </footer>
                 </div>
     </form>

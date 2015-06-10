@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Users>
   <User>
+    <UserId>1</UserId>
     <UserName>Luis</UserName>
     <UserPassWord>XCosa</UserPassWord>
     <UserCurp>LDAS98989SS</UserCurp>
@@ -8,6 +9,7 @@
     <UserType>Beneficiario</UserType>
   </User>
   <User>
+    <UserId>2</UserId>
     <UserName>Blanco</UserName>
     <UserPassWord>Tatoo</UserPassWord>
     <UserCurp>LB878788DTE</UserCurp>
@@ -15,6 +17,7 @@
     <UserType>Beneficiario</UserType>
   </User>
   <User>
+    <UserId>3</UserId>
     <UserName>Faleg</UserName>
     <UserPassWord>Fal</UserPassWord>
     <UserCurp>PEMF870816S</UserCurp>

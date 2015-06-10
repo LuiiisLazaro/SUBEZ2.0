@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<InfoPersonal>
+  <Persona>
+    <Id>1</Id>
+    <Nombres>Luis</Nombres>
+    <ApeidoPaterno>Hernandez</ApeidoPaterno>
+    <ApeidoMaterno>Lazaro</ApeidoMaterno>
+    <FechaNacimiento>09/08/1992</FechaNacimiento>
+    <Nacionalidad>Mexicana</Nacionalidad>
+    <EntidadFedNacimiento>JalaPa,Veracruz</EntidadFedNacimiento>
+    <EstadoCivil>Soltero</EstadoCivil>
+    <TelFijo>9300000</TelFijo>
+    <TelCelular>4965785155</TelCelular>
+    <PassWord>XCosa</PassWord>
+    <Curp>LDAS98989SS</Curp>
+    <Mail>xCosa@cimat.com</Mail>
+    <Type>Beneficiario</Type>
+    <Calle>Gardenias</Calle>
+    <NumExt>#21</NumExt>
+    <NumInt></NumInt>
+    <CalleEntre>Fresnos</CalleEntre>
+    <CalleEntre2>Margaritas</CalleEntre2>
+    <CalleEntre3>Margaritas2</CalleEntre3>
+    <EntidadFed>Veracruz</EntidadFed>
+    <Delegacion>Jalapa</Delegacion>
+    <Localidad></Localidad>
+    <Localidad2></Localidad2>
+    <CP>99000</CP>
+    <Asentamiento>Colonia</Asentamiento>
+    <Latitud></Latitud>
+    <Longuitud></Longuitud>
+  </Persona>
+</InfoPersonal>

@@ -29,7 +29,7 @@ namespace SUBEZ
         {
             if (!Page.IsPostBack)
             {
-                if (Session["Registrar"] == "Usuario")
+                if (Session["Registrar"].ToString() == "Usuario")
                 {
                     lblRegistrar.Text = "Escribe tu Usuario:";
                 }

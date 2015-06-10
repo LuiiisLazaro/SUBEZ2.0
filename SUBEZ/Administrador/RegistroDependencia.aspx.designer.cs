@@ -10,7 +10,7 @@
 namespace SUBEZ.Administrador {
     
     
-    public partial class anioFiscal {
+    public partial class RegistroDependencia {
         
         /// <summary>
         /// Control form1.
@@ -20,14 +20,5 @@ namespace SUBEZ.Administrador {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
-        /// Control ASPxGridView1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxGridView ASPxGridView1;
     }
 }

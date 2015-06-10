@@ -2,7 +2,8 @@ C:\Users\usuariofei\Desktop\BlueTeam\SUBEZ\SUBEZ\bin\SUBEZ.dll
 C:\Users\usuariofei\Desktop\BlueTeam\SUBEZ\SUBEZ\bin\SUBEZ.pdb
 C:\Users\usuariofei\Desktop\BlueTeam\SUBEZ\SUBEZ\obj\Debug\SUBEZ.dll
 C:\Users\usuariofei\Desktop\BlueTeam\SUBEZ\SUBEZ\obj\Debug\SUBEZ.pdb
-C:\Users\User\Desktop\Documentos SeZac\Sistema\SUBEZ\SUBEZ\obj\Debug\SUBEZ.dll
+C:\Users\User\Desktop\Documentos SeZac\Sistema\SUBEZ\SUBEZ\obj\Debug\SUBEZ.dll.licenses
 C:\Users\User\Desktop\Documentos SeZac\Sistema\SUBEZ\SUBEZ\bin\SUBEZ.dll
 C:\Users\User\Desktop\Documentos SeZac\Sistema\SUBEZ\SUBEZ\bin\SUBEZ.pdb
+C:\Users\User\Desktop\Documentos SeZac\Sistema\SUBEZ\SUBEZ\obj\Debug\SUBEZ.dll
 C:\Users\User\Desktop\Documentos SeZac\Sistema\SUBEZ\SUBEZ\obj\Debug\SUBEZ.pdb

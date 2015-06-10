@@ -1,5 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="IPersonal1.aspx.cs" Inherits="SeZac.IPersonal1" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="IPersonal1.aspx.cs" Inherits="SeZac.Organizacion.IPersonal1" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html class="no-js">
 <head>
@@ -36,42 +35,37 @@
       </header>
     <div class="row contenedor_gral">
         <section class="large-3 columns">
-            <div class="navigation-block affix-top">
-               <section class="usuario">
-                  <figure> 
-                  <img src="http://www.subes.sep.gob.mx/api/perfiles/foto/848690b44797674b1b2315cd70979644/3rV7/perfil.jpg" >
-                  <figcaption> 
-                     <strong><a class=""><asp:Label ID="lblNombre" runat="server" Text="Luis Angel Hernández Lázaro"></asp:Label></a>
-                     </strong> <em><asp:Label ID="lblcurp" runat="server" Text="HELL920809HVZRZS07"></asp:Label></em>
-                     <em><asp:Label ID="lbltipo" runat="server" Text="Aspirante"></asp:Label></em> 
-                  </figcaption>
-               </figure>
-            </section>
-            <nav class="main-navigation" role="navigation" >
-               <ul>
-                  <li class="current"><a href="IPersonal1.aspx" class="no-submenu"><span class="awe -user"></span>Información personal</a></li>
-                  <li><a href="IPersonal2.aspx" class="no-submenu"><span class="awe-book"></span>Información Escolar o Infomración Laboral</a></li>
+             <div class="navigation-block affix-top"> 
+                <section class="usuario">
+                     <figure> <img src="../Image/perfil.jpg">
+                      <figcaption> <strong><a class=""><asp:Label ID="lblNombre" runat="server" Text="Tiendas Sorianas SA de CV"></asp:Label></a></strong> 
+                        <em><asp:Label ID="lblcurp" runat="server" Text="TSO991022PB6"></asp:Label></em>
+                        <em><asp:Label ID="lbltipo" runat="server" Text="Organización"></asp:Label></em> 
+                     </figcaption>
+                    </figure>
+                    <figure> <img src="../Image/perfil.jpg">
+                         <figcaption> <strong>Estado de la Organización</figcaption>
+                    </figure>
+                </section>
+                     <nav class="main-navigation" role="navigation">
+                        <ul>
+                          <li class="current"><a href="IPersonal1.aspx" class="no-submenu"><span class="awe -user"></span>Información Organización</a></li>
                   <li><a href="SolicitudPrograma.aspx" class="no-submenu"><span class="awe-file"></span>Solicitudes a Programas</a></li>
                   <li><a href="mensajes.aspx" class="no-submenu"><span class="awe-file"></span>Mensajes</a></li>
                   <li><a href="Configuracion.aspx" class="no-submenu"><span class="awe-cogs"></span>Configuración</a></li>
                   <li><a href="help.aspx" class="no-submenu"><span class="awe-file"></span>Ayuda</a></li>
                   <li><a href="#" class="no-submenu" id="logout"><span class="awe-signout"></span>Cerrar sesión</a></li>
-               </ul>
-            </nav>
-            <section class="side-note">
-               <div class="side-note-container">
-                  <h2><a href="../../archivos/tutor/informacion_personal.pdf" target="_blank">Manual de esta secci&oacute;n</a></h2>
-               </div>
-               <div class="side-note-bottom"></div>
-            </section>
-         </div>
+                        </ul>
+                        </nav>
+             <!-- /Main navigation --> 
+             </div>
       </section>
         <!-- SECCION MAPA -->
         <section class="large-9 columns" role="content" data-equalizer>
          <div class="large-6 columns borde_contenedor hack separa_v" data-equalizer-watch>
             <div class="large-12 columns borde_contenedor hack separa_v" >
                <header>
-                  <h4><span class="awe-home"></span> Información de tu Domicilio</h4>
+                  <h4><span class="awe-home"></span> Información del Domicilio Organizacional</h4>
                   <hr/>
                </header>
                <div id="info-domic-block">
@@ -232,7 +226,7 @@
                      </div>
                      <label class="control-label" ><span class="info-pop" title="¿Qué significa?" data-content="Se refiere a rasgos naturales o culturales (edificaciones) que aportan información adicional para facilitar la ubicación del domicilio geográfico, esto es fundamental en vialidadessin nombre y sin número exterior."></span> Descripción de la ubicación (rasgos naturales o edificios que permitan ubicar tu domicilio</label>
                      <div class="controls">
-                     <asp:TextBox class="rq validaLetras" id="descripcion_ubicacion" type="text" runat="server"></asp:TextBox>
+                     <asp:TextBox class="rq validaLetras" id="descripcion_ubicacion" type="text"></asp:TextBox>
                      </div>
                      <label class="control-label" ><span class="info-pop" title="¿Qué significa?" data-content="Sustantivo propio que identifica a los Estados y al Distrito Federal."></span> Entidad Federativa</label>
                      <div class="controls" id="cbo_edos">
@@ -273,7 +267,7 @@
                      </div>
                      <label class="control-label" ><span class="info-pop" title="¿Qué significa?" data-content="Sustantivo propio que identifica al Municipio y en el caso del Distrito Federal a las Delegaciones."></span> Delegación o Municipio</label>
                      <div class="controls" id="dcbo_mpio">
-                        <asp:DropDownList   class="rq" id="id_Mun" runat="server">
+                        <asp:DropDownList   class="rq" id="DropDownList1" runat="server">
                            <asp:ListItem value="m0">Municipio 0</asp:ListItem>
 	<asp:ListItem value="m1">Municipio 1 </asp:ListItem>
 	<asp:ListItem value="m2">Municipio 2</asp:ListItem>
@@ -288,7 +282,7 @@
                      <label class="control-label" ><span class="info-pop" title="¿Qué significa?" data-content="Sustantivo propio que identifica a la Localidad."></span> Localidad</label>
                      <div class="controls" id="dcbo_loc">
 
-                     <asp:DropDownList class="rq" name="id_loc" id="id_loc2" runat="server">
+                     <asp:DropDownList class="rq" name="id_loc" id="id_loc" runat="server">
                            <asp:ListItem value="l0">Localidad 0</asp:ListItem>
 	<asp:ListItem value="l1">Localidad 1 </asp:ListItem>
 	<asp:ListItem value="l2">Localidad 2</asp:ListItem>
@@ -300,32 +294,13 @@
 	<asp:ListItem value="l8">Localidad 8</asp:ListItem>
 	</asp:DropDownList>
 
-                                         <asp:DropDownList class="rq" name="id_loc" id="id_loc" runat="server">
-                           <asp:ListItem value="l0">Localidad 0</asp:ListItem>
-	<asp:ListItem value="l1">Localidad 1 </asp:ListItem>
-	<asp:ListItem value="l2">Localidad 2</asp:ListItem>
-	<asp:ListItem value="l3">Localidad 3</asp:ListItem>
-	<asp:ListItem value="l4">Localidad 4</asp:ListItem>
-	<asp:ListItem value="l5">Localidad 5</asp:ListItem>
-	<asp:ListItem value="l6">Localidad 6</asp:ListItem>
-	<asp:ListItem value="l7">Localidad 7</asp:ListItem>
-	<asp:ListItem value="l8">Localidad 8</asp:ListItem>
-	</asp:DropDownList>
+                        <select  >
+                        </select>
                      </div>
                      <label class="control-label" ><span class="info-pop" title="¿Qué significa?" data-content="Número que identifica al código postal, constituido por cinco dígitos, obtenido de la información oficial de Correos de México."></span> Código Postal</label>
                      <div class="controls" id="dcbo_cp">
-                      
-                        <asp:DropDownList class="rq" name="id_cp" id="id_cp" runat="server">
-                           <asp:ListItem value="l0">CP 0</asp:ListItem>
-	<asp:ListItem value="l1">CP 1 </asp:ListItem>
-	<asp:ListItem value="l2">CP 2</asp:ListItem>
-	<asp:ListItem value="l3">CP 3</asp:ListItem>
-	<asp:ListItem value="l4">CP 4</asp:ListItem>
-	<asp:ListItem value="l5">CP 5</asp:ListItem>
-	<asp:ListItem value="l6">CP 6</asp:ListItem>
-	<asp:ListItem value="l7">CP 7</asp:ListItem>
-	<asp:ListItem value="l8">CP 8</asp:ListItem>
-	</asp:DropDownList>
+                        <select type="text" name="id_cp" value="" id="id_cp">
+                        </select>
                      </div>
                      <label class="control-label" ><span class="info-pop" title="¿Qué significa?" data-content="Clasificación que se da al asentamiento humano."></span> Tipo y nombre de asentamiento donde se ubica tu domicilio</label>
                      <div class="controls">
@@ -384,8 +359,7 @@
                         <input type="hidden" id="zoom_level" value="">
                      </div>
                      <div class="form-actions separa_v_xl" align="right">
-                        <asp:Button class="btn btn-flat btn-primary button expand" id="upd_inf_dom" 
-                             runat="server" Text="Guardar" onclick="upd_inf_dom_Click"></asp:Button>
+                        <asp:Button class="btn btn-flat btn-primary button expand" id="upd_inf_dom" runat="server" Text="Guardar"></asp:Button>
                      </div>
                   </div>
                </div>
@@ -399,106 +373,7 @@
                </header>
                   <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14716.09186003229!2d-102.55634!3d22.764529!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1433699645330" width="400" height="300" frameborder="0" style="border:0"></iframe>
                   <div id="crosshair"></div>
-            </div>
-            <div class="large-12 columns borde_contenedor separa_contenedor separa_v">
-               <header>
-                  <h4><span class="awe-user"></span> Información Básica</h4>
-                  <hr/>
-               </header>
-               <div class="alert alert-info letra-sm">
-                  <asp:Button  class="close" data-dismiss="alert" type="button" runat="server" Text="x"></asp:Button>
-                  <strong>Importante!</strong> Debes completar toda la información que se te solicita; será necesaria para evitar inconvenientes en tu proceso de solicitud de beca. 
-               </div>
-               <div class="large-12 columns">
-                  <div class="control-group">
-
-
-                     <div class="row">
-                        <div class="large-12 columns">
-                           <label>CURP
-                              <asp:TextBox ID="txtCURP" Text="text" Enabled="false" runat="server"></asp:TextBox>
-                           </label>
-                        </div>
-                     </div>
-
-                     <div class="row">
-                        <div class="large-12 columns">
-                           <label>Nombre(s)
-                           <asp:TextBox ID="txtNombre" Text="text" Enabled="false" runat="server"></asp:TextBox>
-                           </label>
-                        </div>
-                     </div>
-
-                     <div class="row">
-                        <div class="large-12 columns">
-                           <label>Apellido Paterno
-                           <asp:TextBox ID="txtApeidoPat" Text="text" Enabled="false" runat="server"></asp:TextBox>
-                           </label>
-                        </div>
-                     </div>
-
-                      <div class="row">
-                        <div class="large-12 columns">
-                           <label>Apellido Materno
-                           <asp:TextBox ID="txtApeidoMat" Text="text" Enabled="false" runat="server"></asp:TextBox>
-                           </label>
-                        </div>
-                     </div>
-
-                     <div class="row">
-                        <div class="large-12 columns">
-                           <label>Fecha de Nacimiento
-                           <asp:TextBox  ID="txtFechaNac" Text="text" Enabled="false" runat="server"></asp:TextBox>
-                           </label>
-                        </div>
-                     </div>
-
-                      <div class="row">
-                        <div class="large-12 columns">
-                           <label>Nacionalidad
-                                <asp:TextBox ID="txtNacionalidad" Text="text" Enabled="false" runat="server"></asp:TextBox>
-                           </label>
-                        </div>
-                     </div>
-
-                     <div class="row">
-                        <div class="large-12 columns">
-                           <label>Entidad Federativa de Nacimiento
-                                <asp:TextBox type="text" id="edo_nac" readonly runat="server"></asp:TextBox>
-                           </label>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="large-12 infBasic">
-                  <div class="control-group">
-                     <label class="control-label"><span class="info-pop" title="¿Qué significa?" data-content="Estado civil del aspirante."></span> Estado Civil</label>
-                     <div class="controls">
-                     <asp:DropDownList id="edo_civ" class="input-xlarge rq" runat="server">
-                        <asp:ListItem value=" ">Selecciona una opción</asp:ListItem>
-                           <asp:ListItem value="1">Soltero</asp:ListItem>
-                           <asp:ListItem value="2">Casado</asp:ListItem>
-                           <asp:ListItem value="3">Union Libre</asp:ListItem>
-                           <asp:ListItem value="4">Viudo</asp:ListItem>
-                           <asp:ListItem value="5">Divorciado</asp:ListItem>
-                           <asp:ListItem value="6">Separado</asp:ListItem>
-                           </asp:DropDownList>
-                     </div>
-                     <label class="control-label"><span class="info-pop" title="¿Qué significa?" data-content="Teléfono fijo del aspirante."></span> Teléfono Fijo con Lada local</label>
-                     <div class="controls">
-                        <asp:TextBox id="tel_fij" type="text" placeholder="Escribe 10 digitos" data-mask="999-999-99-99" class="rq validaLetras" runat="server"></asp:TextBox>
-                     </div>
-                     <label class="control-label" ><span class="info-pop" title="¿Qué significa?" data-content="Teléfono celular del aspirante."></span> Teléfono Celular (10 números)</label>
-                     <div class="controls">
-                        <asp:TextBox id="tel_cel" type="text" placeholder="Escribe 10 digitos" data-mask="99-99-99-99-99" class="rq validaLetras" runat="server"></asp:TextBox>
-                     </div>
-                  </div>
-                  <div class="large-12 columns separa_v_xl">
-<asp:Button class="btn btn-flat btn-primary button expand" id="upd_info_basic" runat="server" 
-                          Text="Guardar" onclick="upd_info_basic_Click"></asp:Button>
-                  </div>
-               </div>
-            </div>
+            </div>  
          </div>
          </section>
     </div>
