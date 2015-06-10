@@ -53,7 +53,7 @@ namespace SeZac.Beneficiario
         private void CargaDatos()
         {
             document = new XmlDocument();
-            document.Load("C:/XML/BeneficiarioLogin.xml");
+            document.Load("../../../../../XML/BeneficiarioLogin.xml");
             XmlElement Personas = document.DocumentElement;
             //Obtenemos la lista de todos los empleados.
             XmlNodeList listaEmpleados = document.SelectNodes("Users/User");
@@ -62,8 +62,27 @@ namespace SeZac.Beneficiario
                 //Determinamos el nodo  por medio del id de empleado.
                 if (item.FirstChild.InnerText == Session["Usuario"].ToString())
                 {
+
+                    nodo = document.GetElementsByTagName("UserName");
+                    lblNombre.Text = nodo[0].InnerText.ToString();
+                    nodo = document.GetElementsByTagName("UserCurp");
+                    lblcurp.Text = nodo[0].InnerText.ToString();
+                    nodo = document.GetElementsByTagName("UserType");
+                    lbltipo.Text = nodo[0].InnerText.ToString();
+                }
+            }
+            document = new XmlDocument();
+            document.Load("C:/XML/BeneficiarioLogin.xml");
+            Personas = document.DocumentElement;
+            //Obtenemos la lista de todos los empleados.
+            listaEmpleados = document.SelectNodes("Users/User");
+            foreach (XmlNode item in listaEmpleados)
+            {
+                //Determinamos el nodo  por medio del id de empleado.
+                if (item.FirstChild.InnerText == Session["Usuario"].ToString())
+                {
                     nodo = document.GetElementsByTagName("UserMail");
-                    email_act.Text  =nodo[0].InnerText.ToString();
+                    email_act.Text = nodo[0].InnerText.ToString();
                     nodo = document.GetElementsByTagName("UserPassWord");
                     chp_pass_act_.Text = nodo[0].InnerText.ToString();
                 }
@@ -77,7 +96,7 @@ namespace SeZac.Beneficiario
         private void guardaInfo()
         {
             if (new_email.Text == new_email_conf.Text && new_paswd.Text == new_paswd_conf.Text)
-            {               
+            {
                 document = new XmlDocument();
                 document.Load("C:/XML/BeneficiarioLogin.xml");
                 XmlElement Personas = document.DocumentElement;
@@ -94,7 +113,7 @@ namespace SeZac.Beneficiario
                         nodo[0].InnerText = new_paswd.Text;
                         document.Save("C:/XML/BeneficiarioLogin.xml.xml");
                     }
-            
+
                 }
             }
         }

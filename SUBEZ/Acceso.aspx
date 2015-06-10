@@ -107,7 +107,7 @@
                      <img src="../Image/ico_inst.png">
                   </div>
                   <div class="small-10 medium-10 large-11 columns separa_v_xl" align="justify">
-                     <h4>Ingresa como Empresa.</h4>
+                     <h4>Ingresa como Organización.</h4>
                   </div>
                </header>
                 <div class="small-12 medium-6 large-6 columns separa_v">

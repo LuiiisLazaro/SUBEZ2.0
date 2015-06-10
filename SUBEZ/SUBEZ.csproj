@@ -308,6 +308,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="XML\InformacionEmpresa.xml" />
     <Content Include="XML\EmpresaLogin.xml" />
     <Content Include="XML\InformacionEscolar.xml" />
     <Content Include="XML\InformacionLaboral.xml" />

@@ -54,14 +54,14 @@ namespace SeZac
                 document.Load("../../../../../XML/EmpresaLogin.xml");
                 nodo = document.GetElementsByTagName("UserId");
                 String strID = nodo[0].InnerText.ToString();
-                nodo = document.GetElementsByTagName("UserName");
+                nodo = document.GetElementsByTagName("CompanyName");
                 String strUser = nodo[0].InnerText.ToString();
-                nodo = document.GetElementsByTagName("UserPassWord");
+                nodo = document.GetElementsByTagName("CompanyPassWord");
                 String strPass = nodo[0].InnerText.ToString();
                 if (txtPassEmpresa.Text == strPass && txtEmpresa.Text == strUser)
                 {
                     Session["Usuario"] = strID;
-                    Response.Redirect("~/Beneficiario/IPersonal1.aspx");
+                    Response.Redirect("~/Organizacion/IPersonal1.aspx");
                 }
                 else
                 {
@@ -96,13 +96,15 @@ namespace SeZac
             {
                 document = new XmlDocument();
                 document.Load("../../../../../XML/BeneficiarioLogin.xml");
+                nodo = document.GetElementsByTagName("UserId");
+                String strID = nodo[0].InnerText.ToString();
                 nodo = document.GetElementsByTagName("UserCurp");
                 String strUser = nodo[0].InnerText.ToString();
                 nodo = document.GetElementsByTagName("UserPassWord");
                 String strPass = nodo[0].InnerText.ToString();
                 if (txtPassWord.Text == strPass && txtCURP.Text == strUser)
                 {
-                    Session["Usuario"] = "1";
+                    Session["Usuario"] = strID;
                     Response.Redirect("~/Beneficiario/IPersonal1.aspx");
                 }
                 else

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Companys>
+  <Company>
+    <Id>1</Id>
+    <Nombre>CIMAT</Nombre>
+    <PassWord>CIMAT</PassWord>
+    <RFC>CIMAR87DE87</RFC>
+    <Nacionalidad>Mexicana</Nacionalidad>
+    <EntidadFedNacimiento>JalaPa,Veracruz</EntidadFedNacimiento>
+    <EstadoCivil>Soltero</EstadoCivil>
+    <TelFijo>9300000</TelFijo>
+    <TelCelular>4965785155</TelCelular>
+    <PassWord>XCosa</PassWord>
+    <Curp>LDAS98989SS</Curp>
+    <Mail>cimat@cimat.com</Mail>
+    <Type>Beneficiario</Type>
+    <Calle>Gardenias</Calle>
+    <NumExt>#21</NumExt>
+    <NumInt></NumInt>
+    <CalleEntre>Fresnos</CalleEntre>
+    <CalleEntre2>Margaritas</CalleEntre2>
+    <CalleEntre3>Margaritas2</CalleEntre3>
+    <EntidadFed>Veracruz</EntidadFed>
+    <Delegacion>Jalapa</Delegacion>
+    <Localidad></Localidad>
+    <Localidad2></Localidad2>
+    <CP>99000</CP>
+    <Asentamiento>Colonia</Asentamiento>
+    <Latitud></Latitud>
+    <Longuitud></Longuitud>
+  </Company>
+  <Company>
+    <Id>2</Id>
+    <Nombre>SE</Nombre>
+    <PassWord>SE</PassWord>
+    <RFC>SE989SDS</RFC>
+    <Nacionalidad>Mexicana</Nacionalidad>
+    <EntidadFedNacimiento>Fresnillo,Zacatecas</EntidadFedNacimiento>
+    <EstadoCivil>Soltero</EstadoCivil>
+    <TelFijo>9300000</TelFijo>
+    <TelCelular>4965785155</TelCelular>
+    <PassWord>XCosa</PassWord>
+    <Curp>LDAS98989SS</Curp>
+    <Mail>cimat@cimat.com</Mail>
+    <Type>Beneficiario</Type>
+    <Calle>Gardenias</Calle>
+    <NumExt>#21</NumExt>
+    <NumInt></NumInt>
+    <CalleEntre>Fresnos</CalleEntre>
+    <CalleEntre2>Margaritas</CalleEntre2>
+    <CalleEntre3>Margaritas2</CalleEntre3>
+    <EntidadFed>Veracruz</EntidadFed>
+    <Delegacion>Jalapa</Delegacion>
+    <Localidad></Localidad>
+    <Localidad2></Localidad2>
+    <CP>99000</CP>
+    <Asentamiento>Colonia</Asentamiento>
+    <Latitud></Latitud>
+    <Longuitud></Longuitud>
+  </Company>
+
+
+</Companys>

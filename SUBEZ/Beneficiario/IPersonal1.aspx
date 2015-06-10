@@ -55,7 +55,7 @@
                   <li><a href="IPersonal1.aspx" class="no-submenu"><span class="awe-file"></span>Mensajes</a></li>
                   <li><a href="Configuracion.aspx" class="no-submenu"><span class="awe-cogs"></span>Configuración</a></li>
                   <li><a href="IPersonal1.aspx" class="no-submenu"><span class="awe-file"></span>Ayuda</a></li>
-                  <li><a href="../Acceso.aspx"" class="no-submenu" id="logout"><span class="awe-signout"></span>Cerrar sesión</a></li>
+                  <li><a href="../Acceso.aspx" class="no-submenu" id="logout"><span class="awe-signout"></span>Cerrar sesión</a></li>
                </ul>
             </nav>
             <section class="side-note">

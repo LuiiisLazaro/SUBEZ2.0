@@ -53,10 +53,29 @@ namespace SeZac
         private void CargaDatos()
         {
             document = new XmlDocument();
-            document.Load("../../../../../XML/InformacionPersonal.xml");
+            document.Load("../../../../../XML/BeneficiarioLogin.xml");
             XmlElement Personas = document.DocumentElement;
             //Obtenemos la lista de todos los empleados.
-            XmlNodeList listaEmpleados = document.SelectNodes("InfoPersonal/Persona");
+            XmlNodeList listaEmpleados = document.SelectNodes("Users/User");
+            foreach (XmlNode item in listaEmpleados)
+            {
+                //Determinamos el nodo  por medio del id de empleado.
+                if (item.FirstChild.InnerText == Session["Usuario"].ToString())
+                {
+
+                    nodo = document.GetElementsByTagName("UserName");
+                    lblNombre.Text = nodo[0].InnerText.ToString();
+                    nodo = document.GetElementsByTagName("UserCurp");
+                    lblcurp.Text = nodo[0].InnerText.ToString();
+                    nodo = document.GetElementsByTagName("UserType");
+                    lbltipo.Text = nodo[0].InnerText.ToString();
+                }
+            }
+            document = new XmlDocument();
+            document.Load("../../../../../XML/InformacionPersonal.xml");
+             Personas = document.DocumentElement;
+            //Obtenemos la lista de todos los empleados.
+             listaEmpleados = document.SelectNodes("InfoPersonal/Persona");
             foreach (XmlNode item in listaEmpleados)
             {
                 //Determinamos el nodo  por medio del id de empleado.

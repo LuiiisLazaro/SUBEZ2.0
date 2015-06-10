@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Companys>
   <Company>
+    <UserId>1</UserId>
     <CompanyName>CIMAT</CompanyName>
     <CompanyPassWord>CIMAT</CompanyPassWord>
     <CompanyRFC>CIMAR87DE87</CompanyRFC>
@@ -8,6 +9,7 @@
     <CompanyType>Empresa</CompanyType>
   </Company>
   <Company>
+    <UserId>2</UserId>
     <CompanyName>SE</CompanyName>
     <CompanyPassWord>SE</CompanyPassWord>
     <CompanyRFC>SE989SDS</CompanyRFC>

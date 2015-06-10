@@ -139,6 +139,15 @@ namespace SeZac.Organizacion {
         protected global::System.Web.UI.WebControls.TextBox calle_posterior;
         
         /// <summary>
+        /// Control descripcion_ubicacion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox descripcion_ubicacion;
+        
+        /// <summary>
         /// Control id_edo.
         /// </summary>
         /// <remarks>
@@ -148,13 +157,13 @@ namespace SeZac.Organizacion {
         protected global::System.Web.UI.WebControls.DropDownList id_edo;
         
         /// <summary>
-        /// Control DropDownList1.
+        /// Control municipio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList municipio;
         
         /// <summary>
         /// Control id_loc.
@@ -164,6 +173,24 @@ namespace SeZac.Organizacion {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList id_loc;
+        
+        /// <summary>
+        /// Control id_loc2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList id_loc2;
+        
+        /// <summary>
+        /// Control id_cp.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList id_cp;
         
         /// <summary>
         /// Control tipo_asentamiento.

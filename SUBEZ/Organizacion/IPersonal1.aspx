@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="IPersonal1.aspx.cs" Inherits="SeZac.Organizacion.IPersonal1" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html class="no-js">
 <head>
@@ -18,7 +19,6 @@
     <link href="../Css/Style/jquery.visualize.css" rel="stylesheet" type="text/css" />
     <link href="../Css/Style/cnbes.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="../../favicon.ico">
-    
     <link rel="icon" href="../../sep.png" type="image/x-icon">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../me/static/img/icons/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../me/static/img/icons/apple-touch-icon-72-precomposed.png">
@@ -26,7 +26,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
 </head>
 <body class="body">
-<form id="Form1" runat="server">
+    <form id="Form1" runat="server">
     <header class="row contenedor_gral" id="arriba">
          <div class="large-3">
             <img src="../Image/SeZac.jpg" />
@@ -50,11 +50,11 @@
                      <nav class="main-navigation" role="navigation">
                         <ul>
                           <li class="current"><a href="IPersonal1.aspx" class="no-submenu"><span class="awe -user"></span>Información Organización</a></li>
-                  <li><a href="SolicitudPrograma.aspx" class="no-submenu"><span class="awe-file"></span>Solicitudes a Programas</a></li>
-                  <li><a href="mensajes.aspx" class="no-submenu"><span class="awe-file"></span>Mensajes</a></li>
-                  <li><a href="Configuracion.aspx" class="no-submenu"><span class="awe-cogs"></span>Configuración</a></li>
-                  <li><a href="help.aspx" class="no-submenu"><span class="awe-file"></span>Ayuda</a></li>
-                  <li><a href="#" class="no-submenu" id="logout"><span class="awe-signout"></span>Cerrar sesión</a></li>
+                  <li><a href="SolicitudProgramaOrg.aspx" class="no-submenu"><span class="awe-file"></span>Solicitudes a Programas</a></li>
+                  <li><a href="IPersonal1.aspx" class="no-submenu"><span class="awe-file"></span>Mensajes</a></li>
+                  <li><a href="OrgConfig.aspx" class="no-submenu"><span class="awe-cogs"></span>Configuración</a></li>
+                  <li><a href="IPersonal1.aspx" class="no-submenu"><span class="awe-file"></span>Ayuda</a></li>
+                  <li><a href="../Acceso.aspx" class="no-submenu" id="logout"><span class="awe-signout"></span>Cerrar sesión</a></li>
                         </ul>
                         </nav>
              <!-- /Main navigation --> 
@@ -226,7 +226,7 @@
                      </div>
                      <label class="control-label" ><span class="info-pop" title="¿Qué significa?" data-content="Se refiere a rasgos naturales o culturales (edificaciones) que aportan información adicional para facilitar la ubicación del domicilio geográfico, esto es fundamental en vialidadessin nombre y sin número exterior."></span> Descripción de la ubicación (rasgos naturales o edificios que permitan ubicar tu domicilio</label>
                      <div class="controls">
-                     <asp:TextBox class="rq validaLetras" id="descripcion_ubicacion" type="text"></asp:TextBox>
+                     <asp:TextBox class="rq validaLetras" id="descripcion_ubicacion" type="text" runat="server"></asp:TextBox>
                      </div>
                      <label class="control-label" ><span class="info-pop" title="¿Qué significa?" data-content="Sustantivo propio que identifica a los Estados y al Distrito Federal."></span> Entidad Federativa</label>
                      <div class="controls" id="cbo_edos">
@@ -267,7 +267,7 @@
                      </div>
                      <label class="control-label" ><span class="info-pop" title="¿Qué significa?" data-content="Sustantivo propio que identifica al Municipio y en el caso del Distrito Federal a las Delegaciones."></span> Delegación o Municipio</label>
                      <div class="controls" id="dcbo_mpio">
-                        <asp:DropDownList   class="rq" id="DropDownList1" runat="server">
+                        <asp:DropDownList  id="municipio" class="rq" runat="server">
                            <asp:ListItem value="m0">Municipio 0</asp:ListItem>
 	<asp:ListItem value="m1">Municipio 1 </asp:ListItem>
 	<asp:ListItem value="m2">Municipio 2</asp:ListItem>
@@ -294,13 +294,31 @@
 	<asp:ListItem value="l8">Localidad 8</asp:ListItem>
 	</asp:DropDownList>
 
-                        <select  >
-                        </select>
+                        <asp:DropDownList class="rq" name="id_loc2" id="id_loc2" runat="server">
+                           <asp:ListItem value="l0">Localidad 0</asp:ListItem>
+	<asp:ListItem value="l1">Localidad 1 </asp:ListItem>
+	<asp:ListItem value="l2">Localidad 2</asp:ListItem>
+	<asp:ListItem value="l3">Localidad 3</asp:ListItem>
+	<asp:ListItem value="l4">Localidad 4</asp:ListItem>
+	<asp:ListItem value="l5">Localidad 5</asp:ListItem>
+	<asp:ListItem value="l6">Localidad 6</asp:ListItem>
+	<asp:ListItem value="l7">Localidad 7</asp:ListItem>
+	<asp:ListItem value="l8">Localidad 8</asp:ListItem>
+	</asp:DropDownList>
                      </div>
                      <label class="control-label" ><span class="info-pop" title="¿Qué significa?" data-content="Número que identifica al código postal, constituido por cinco dígitos, obtenido de la información oficial de Correos de México."></span> Código Postal</label>
                      <div class="controls" id="dcbo_cp">
-                        <select type="text" name="id_cp" value="" id="id_cp">
-                        </select>
+                          <asp:DropDownList class="rq" name="id_cp" id="id_cp" runat="server">
+                           <asp:ListItem value="l0">Localidad 0</asp:ListItem>
+	<asp:ListItem value="l1">Localidad 1 </asp:ListItem>
+	<asp:ListItem value="l2">Localidad 2</asp:ListItem>
+	<asp:ListItem value="l3">Localidad 3</asp:ListItem>
+	<asp:ListItem value="l4">Localidad 4</asp:ListItem>
+	<asp:ListItem value="l5">Localidad 5</asp:ListItem>
+	<asp:ListItem value="l6">Localidad 6</asp:ListItem>
+	<asp:ListItem value="l7">Localidad 7</asp:ListItem>
+	<asp:ListItem value="l8">Localidad 8</asp:ListItem>
+	</asp:DropDownList>
                      </div>
                      <label class="control-label" ><span class="info-pop" title="¿Qué significa?" data-content="Clasificación que se da al asentamiento humano."></span> Tipo y nombre de asentamiento donde se ubica tu domicilio</label>
                      <div class="controls">
@@ -359,7 +377,8 @@
                         <input type="hidden" id="zoom_level" value="">
                      </div>
                      <div class="form-actions separa_v_xl" align="right">
-                        <asp:Button class="btn btn-flat btn-primary button expand" id="upd_inf_dom" runat="server" Text="Guardar"></asp:Button>
+                        <asp:Button class="btn btn-flat btn-primary button expand" id="upd_inf_dom" 
+                             runat="server" Text="Guardar" onclick="upd_inf_dom_Click1"></asp:Button>
                      </div>
                   </div>
                </div>
@@ -384,7 +403,6 @@
 	</footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
     <script src="../Css/Script/foundation.js" type="text/javascript"></script>
     <script src="../Css/Script/responsive-tables.js" type="text/javascript"></script>
     <script src="../Css/Script/foundation.accordion.js" type="text/javascript"></script>
