@@ -65,13 +65,13 @@
                 </section>
                      <nav class="main-navigation" role="navigation">
                         <ul>
-                          <li class="current"><a href="IPersonal1.aspx" class="no-submenu"><span class="awe -user"></span>Información personal</a></li>
-                  <li><a href="IPersonal2.aspx" class="no-submenu"><span class="awe-book"></span>Información Escolar o Infomración Laboral</a></li>
+                           <li ><a href="IPersonal1.aspx" class="no-submenu"><span class="awe -user"></span>Información personal</a></li>
+                  <li ><a href="IPersonal2.aspx" class="no-submenu"><span class="awe-book"></span>Información Escolar o Infomración Laboral</a></li>
                   <li><a href="SolicitudPrograma.aspx" class="no-submenu"><span class="awe-file"></span>Solicitudes a Programas</a></li>
-                  <li><a href="mensajes.aspx" class="no-submenu"><span class="awe-file"></span>Mensajes</a></li>
-                  <li><a href="Configuracion.aspx" class="no-submenu"><span class="awe-cogs"></span>Configuración</a></li>
-                  <li><a href="help.aspx" class="no-submenu"><span class="awe-file"></span>Ayuda</a></li>
-                  <li><a href="#" class="no-submenu" id="logout"><span class="awe-signout"></span>Cerrar sesión</a></li>
+                  <li><a href="IPersonal1.aspx" class="no-submenu"><span class="awe-file"></span>Mensajes</a></li>
+                  <li class="current"><a href="Configuracion.aspx" class="no-submenu"><span class="awe-cogs"></span>Configuración</a></li>
+                  <li><a href="IPersonal1.aspx" class="no-submenu"><span class="awe-file"></span>Ayuda</a></li>
+                  <li><a href="../Acceso.aspx"" class="no-submenu" id="logout"><span class="awe-signout"></span>Cerrar sesión</a></li>
                         </ul>
                         </nav>
              <!-- /Main navigation --> 
@@ -119,7 +119,9 @@
                             </label>
                         </div>
                         <div class="large-12 columns separa_v">
-                            <asp:Button type="submit" class="btn btn-flat btn-primary button expand" id="upd_new_email" runat="server" Text="Actualizar" />
+                            <asp:Button type="submit" class="btn btn-flat btn-primary button expand" 
+                                id="upd_new_email" runat="server" Text="Actualizar" 
+                                onclick="upd_new_email_Click" />
                         </div>
                         
                     </div>
@@ -155,7 +157,9 @@
                             </label>
                         </div>
                         <div class="large-12 columns separa_v">
-                            <asp:Button type="submit" class="btn btn-flat btn-primary button expand" id="upd_new_paswd" runat="server" Text="Actualizar" />
+                            <asp:Button type="submit" class="btn btn-flat btn-primary button expand" 
+                                id="upd_new_paswd" runat="server" Text="Actualizar" 
+                                onclick="upd_new_paswd_Click" />
                         </div>
                         </form>
                         <footer class="info" style="margin: 0px;">

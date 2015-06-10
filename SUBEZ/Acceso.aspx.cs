@@ -27,7 +27,7 @@ namespace SeZac
         /// <param name="e"></param>
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Session["Usuario"] = "0";
         }
 
         /// <summary>

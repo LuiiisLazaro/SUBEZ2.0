@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<InfoEscolar>
+  <Escolar>
+    <Id>1</Id>
+    <GradoEstudios>3</GradoEstudios>
+    <Institucion>1</Institucion>
+    <Carrera>Ingenieria en Sistemas Computacionales</Carrera>
+  </Escolar>
+</InfoEscolar>

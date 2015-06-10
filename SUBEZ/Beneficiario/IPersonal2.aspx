@@ -49,13 +49,13 @@
             </section>
             <nav class="main-navigation" role="navigation" >
                <ul>
-                  <li class="current"><a href="IPersonal1.aspx" class="no-submenu"><span class="awe -user"></span>Información personal</a></li>
-                  <li><a href="IPersonal2.aspx" class="no-submenu"><span class="awe-book"></span>Información Escolar o Infomración Laboral</a></li>
+                  <li ><a href="IPersonal1.aspx" class="no-submenu"><span class="awe -user"></span>Información personal</a></li>
+                  <li class="current"><a href="IPersonal2.aspx" class="no-submenu"><span class="awe-book"></span>Información Escolar o Infomración Laboral</a></li>
                   <li><a href="SolicitudPrograma.aspx" class="no-submenu"><span class="awe-file"></span>Solicitudes a Programas</a></li>
-                  <li><a href="mensajes.aspx" class="no-submenu"><span class="awe-file"></span>Mensajes</a></li>
+                  <li><a href="IPersonal1.aspx" class="no-submenu"><span class="awe-file"></span>Mensajes</a></li>
                   <li><a href="Configuracion.aspx" class="no-submenu"><span class="awe-cogs"></span>Configuración</a></li>
-                  <li><a href="help.aspx" class="no-submenu"><span class="awe-file"></span>Ayuda</a></li>
-                  <li><a href="#" class="no-submenu" id="logout"><span class="awe-signout"></span>Cerrar sesión</a></li>
+                  <li><a href="IPersonal1.aspx" class="no-submenu"><span class="awe-file"></span>Ayuda</a></li>
+                  <li><a href="../Acceso.aspx"" class="no-submenu" id="logout"><span class="awe-signout"></span>Cerrar sesión</a></li>
                </ul>
             </nav>
             <section class="side-note">
@@ -80,7 +80,7 @@
                         <span class="info-pop" title="¿Qué significa?" data-content="Último grado de estudios con el que cuenta el aspirante a los programas de sezac"></span> 
                       Último grado de estudios
                       <div class="controls">
-                     <asp:DropDownList ID="DropDownList1" runat="server">
+                     <asp:DropDownList ID="dllEstudios" runat="server">
                         <asp:ListItem Text="Seleccione una Opción" Value="0"></asp:ListItem>
                         <asp:ListItem Text="Doctorado" Value="1"></asp:ListItem>
                         <asp:ListItem Text="Maestría" Value="2"></asp:ListItem>
@@ -95,7 +95,7 @@
                         <span class="info-pop" title="¿Qué significa?" data-content="Institutución Académica donde se obtuvo el certificado o reconocimiento del último grado de estudios"></span> 
                       Institución Educativa donde se obtuvo el grado académico
                       <div class="controls">
-                     <asp:DropDownList ID="DropDownList2" runat="server">
+                     <asp:DropDownList ID="dllUniv" runat="server">
                         <asp:ListItem Text="Seleccione una Opción" Value="0"></asp:ListItem>
                         <asp:ListItem Text="Universidad Veracruzana" Value="1"></asp:ListItem>
                         <asp:ListItem Text="Universidad Autónoma de Zacatecas" Value="2"></asp:ListItem>
@@ -113,7 +113,8 @@
                      </label>
                <div class="large-12 infBasic">
                   <div class="large-12 columns separa_v_xl">
-                     <asp:Button class="btn btn-flat btn-primary button expand" id="Button1" runat="server" Text="Guardar "></asp:Button>
+                     <asp:Button class="btn btn-flat btn-primary button expand" id="Button1" 
+                          runat="server" Text="Guardar " onclick="Button1_Click"></asp:Button>
                   </div>
                </div>      
                      </div>
@@ -164,7 +165,8 @@
                </div>
                <div class="large-12 infBasic">
                   <div class="large-12 columns separa_v_xl">
-                     <asp:Button class="btn btn-flat btn-primary button expand" id="upd_info_basic" runat="server" Text="Guardar "></asp:Button>
+                     <asp:Button class="btn btn-flat btn-primary button expand" id="upd_info_basic" 
+                          runat="server" Text="Guardar " onclick="upd_info_basic_Click"></asp:Button>
                   </div>
                </div>
             </div>

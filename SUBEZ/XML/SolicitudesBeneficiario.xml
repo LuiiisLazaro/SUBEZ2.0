@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Solicitudes>
+  <Beneficiario>
+    <Id>1</Id>
+    <Programa>Certificacion en NET Framework 3.5</Programa>
+    <Periodo>2014-2015</Periodo>
+    <Estado>Aprobado</Estado>
+  </Beneficiario>
+  <Beneficiario>
+    <Id>1</Id>
+    <Id>1</Id>
+    <Programa>Certificacion en SQL Server 2008</Programa>
+    <Periodo>2015-2016</Periodo>
+    <Estado>En Curso</Estado>
+  </Beneficiario>
+</Solicitudes>

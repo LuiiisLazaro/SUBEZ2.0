@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<InfoLaboral>
+  <Laboral>
+    <Id>1</Id>
+    <Empresa>CIMAT</Empresa>
+    <Puesto>Encargado Dependecias</Puesto>
+    <Jefe>Jose Mora</Jefe>
+    <TelOficina>493112122</TelOficina>
+  </Laboral>
+</InfoLaboral>

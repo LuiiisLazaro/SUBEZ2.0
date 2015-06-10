@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SolicitudPrograma.aspx.cs" Inherits="SeZac.Beneficiario.SolicitudPrograma" %>
 
+<%@ Register assembly="DevExpress.Web.v15.1, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web" tagprefix="dx" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <style>
     #mens-alert
@@ -49,6 +51,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
    </head>
   <body class="body">
+      <form id="form1" runat="server">
       <header class="row contenedor_gral" id="arriba">
          <div class="large-3">
             <img src="../Image/SeZac.jpg" />
@@ -67,13 +70,13 @@
                 </section>
                     <nav class="main-navigation" role="navigation">
                       <ul>
-                        <li class="current"><a href="IPersonal1.aspx" class="no-submenu"><span class="awe -user"></span>Información personal</a></li>
-                  <li><a href="IPersonal2.aspx" class="no-submenu"><span class="awe-book"></span>Información Escolar o Infomración Laboral</a></li>
-                  <li><a href="SolicitudPrograma.aspx" class="no-submenu"><span class="awe-file"></span>Solicitudes a Programas</a></li>
-                  <li><a href="mensajes.aspx" class="no-submenu"><span class="awe-file"></span>Mensajes</a></li>
-                  <li><a href="Configuracion.aspx" class="no-submenu"><span class="awe-cogs"></span>Configuración</a></li>
-                  <li><a href="help.aspx" class="no-submenu"><span class="awe-file"></span>Ayuda</a></li>
-                  <li><a href="#" class="no-submenu" id="logout"><span class="awe-signout"></span>Cerrar sesión</a></li>
+                        <li ><a href="IPersonal1.aspx" class="no-submenu"><span class="awe -user"></span>Información personal</a></li>
+                  <li ><a href="IPersonal2.aspx" class="no-submenu"><span class="awe-book"></span>Información Escolar o Infomración Laboral</a></li>
+                  <li class="current"><a href="SolicitudPrograma.aspx" class="no-submenu"><span class="awe-file"></span>Solicitudes a Programas</a></li>
+                  <li><a href="IPersonal1.aspx" class="no-submenu"><span class="awe-file"></span>Mensajes</a></li>
+                  <li ><a href="Configuracion.aspx" class="no-submenu"><span class="awe-cogs"></span>Configuración</a></li>
+                  <li><a href="IPersonal1.aspx" class="no-submenu"><span class="awe-file"></span>Ayuda</a></li>
+                  <li><a href="../Acceso.aspx"" class="no-submenu" id="logout"><span class="awe-signout"></span>Cerrar sesión</a></li>
                       </ul>
                     </nav>
 
@@ -95,10 +98,34 @@
             <div class="large-12 columns separa_v borde_contenedor">
                <header>
                   <h4>Mis Solicitudes</h4>
-                  <hr>
                </header>
+                  <hr>
                <div class="large-12 columns separa_v" id="mis_s">
-                  
+                  <div class="small-12 medium-3 large-3 columns separa_v">
+                   <asp:Button class="btn btn-flat btn-primary button expand" ID="btnAgregarPrograma" 
+                          runat="server" Text="Exporta a Excel" onclick="btnAgregarPrograma_Click" />
+               </div>
+               <div class="small-12 medium-3 large-3 columns separa_v">
+                  <asp:Button class="btn btn-flat btn-primary button expand" ID="btnActualizar" 
+                       runat="server" Text="Exporta a Word" onclick="btnActualizar_Click" />
+               </div>
+               <div class="small-12 medium-3 large-3 columns separa_v">
+                  <asp:Button class="btn btn-flat btn-primary button expand" 
+                       ID="btnGuardarCambios" runat="server" Text="Exporta a PDF" 
+                       onclick="btnGuardarCambios_Click" />
+               </div>
+               <div class="large-12 columns separa_v" id="Div1">
+                   <dx:ASPxGridView ID="gvSolicitudes" runat="server" onload="gvSolicitudes_Load" 
+                       Theme="iOS">
+                       <Settings ShowFilterRow="True" />
+                       <Columns>
+                       <dx:GridViewDataColumn Caption="PROGRAMA" FieldName="Programa" Settings-AllowSort="True"></dx:GridViewDataColumn>
+                       <dx:GridViewDataColumn Caption="PERIODO" FieldName="Periodo" Settings-AllowSort="True"></dx:GridViewDataColumn>
+                       <dx:GridViewDataColumn Caption="ESTADO" FieldName="Estado" Settings-AllowSort="True"></dx:GridViewDataColumn>
+                       </Columns>
+                   </dx:ASPxGridView>
+                   <dx:ASPxGridViewExporter ID="Xporter" GridViewID="gvSolicitudes" runat="server"></dx:ASPxGridViewExporter>
+               </div>
                </div>
             </div>
             <div class="large-12 columns separa_v borde_contenedor">
@@ -112,13 +139,10 @@
                      <div class="large-4 columns" id="div_ordena" style="display: block;">  
                      </div>
                   <div class="large-12 columns"><div class="small-12 medium-4 large-4 columns">
-                   <div style="min-height:100px; margin:20px 0px 0px 0px; width:100%;">
-                       imágen certificación</div>
                     <div style="background:#9DD06B;padding:8px 12px 8px 20px;" class="banner"/>
                     <h5><b>PROGRAMA "CERTIFICACIÓN EN JAVA "PRIMERA ETAPA GENERACION 2015-2017</b></h5><h5>Monto total: <strong>$26000</strong>
                     </h5><p class="point"><a data-toggle="modal" data-reveal-id="confirma" href="http://www.SUBEZ.sep.gob.mx/perfil/solicitudes/#" "="" class="valida_compa" id="compatible_266" name="266">
-                    <span class="awe-random point"></span><span class="point"> Compatibilidad con otros programas</span></a><a target="_blank" href="http://168.255.101.19/sites/default/files/Maestria_FrancoMexicano_etapa1.pdf"></a></p><p class="point"><a target="_blank" href="http://168.255.101.19/sites/default/files/Maestria_FrancoMexicano_etapa1.pdf"><span class="awe-list-alt"></span> Detalles del programa</a></p> <div align="right"><button class="btn btn-flat btn-primary button expand val_solicitud " ruta="../../cuestionarios/CuestionarioPosgInterConveniosAlumnos2015/" name="148|140|" gpo="384" id="btn_266" diri="ALUMNOS" tcar="A" acar="2015" incompa="">Solicitar esta Programa</button></div></div><div id="c266"></div></div><div class="small-12 medium-4 large-4 columns"> <div style="min-height:100px; margin:20px 0px 0px 0px;; width:100%;"> 
-                      imágen certificación</div><div style="background:#9DD06B;padding:8px 12px 8px 20px;" class="banner"><h5><b>
+                    <span class="awe-random point"></span><span class="point"> Compatibilidad con otros programas</span></a><a target="_blank" href="http://168.255.101.19/sites/default/files/Maestria_FrancoMexicano_etapa1.pdf"></a></p><p class="point"><a target="_blank" href="http://168.255.101.19/sites/default/files/Maestria_FrancoMexicano_etapa1.pdf"><span class="awe-list-alt"></span> Detalles del programa</a></p> <div align="right"><button class="btn btn-flat btn-primary button expand val_solicitud " ruta="../../cuestionarios/CuestionarioPosgInterConveniosAlumnos2015/" name="148|140|" gpo="384" id="btn_266" diri="ALUMNOS" tcar="A" acar="2015" incompa="">Solicitar esta Programa</button></div></div><div id="c266"></div></div><div class="small-12 medium-4 large-4 columns"> <div style="background:#9DD06B;padding:8px 12px 8px 20px;" class="banner"><h5><b>
                       PROGRAMA CERTIFICACIÓN EN MANEJO DE BASE DE DATOS</b></h5><h5>Monto total: <strong>$23000</strong></h5><p class="point"><a data-toggle="modal" data-reveal-id="confirma" href="http://www.SUBEZ.sep.gob.mx/perfil/solicitudes/#" "="" class="valida_compa" id="compatible_267" name="267"><span class="awe-random point"></span><span class="point"> Compatibilidad con otros 
                       programas</span></a><a target="_blank" href="http://168.255.101.19/sites/default/files/Maestria_FrancoMexicano_etapa2.pdf"></a></p><p class="point"><a target="_blank" href="http://168.255.101.19/sites/default/files/Maestria_FrancoMexicano_etapa2.pdf"><span class="awe-list-alt"></span> Detalles del programa</a></p> <div align="right"><button class="btn btn-flat btn-primary button expand val_solicitud " ruta="../../cuestionarios/CuestionarioPosgInterConveniosAlumnos2015/" name="98|267|" gpo="384" id="btn_267" diri="ALUMNOS" tcar="A" acar="2015" incompa="">Solicitar este programa</button></div></div><div id="c267"></div></div></div></div>
                </div>
@@ -200,6 +224,7 @@ m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBef
     });
 </script>
     <script type="text/javascript" src="../../utils/perfil/solicitud.js"></script>
+      </form>
   </body>
 </html>
 

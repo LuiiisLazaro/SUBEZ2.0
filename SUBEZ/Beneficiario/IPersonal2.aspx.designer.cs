@@ -49,22 +49,22 @@ namespace SeZac {
         protected global::System.Web.UI.WebControls.Label lbltipo;
         
         /// <summary>
-        /// Control DropDownList1.
+        /// Control dllEstudios.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList dllEstudios;
         
         /// <summary>
-        /// Control DropDownList2.
+        /// Control dllUniv.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        protected global::System.Web.UI.WebControls.DropDownList dllUniv;
         
         /// <summary>
         /// Control n_int.
