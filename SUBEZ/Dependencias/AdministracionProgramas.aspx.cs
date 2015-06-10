@@ -10,12 +10,12 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data;
 using System.Xml;
+using System.Data;
 
 namespace SUBEZ.Dependencias
 {
-    public partial class InscripcionBenProg : System.Web.UI.Page
+    public partial class AdministracionProgramas : System.Web.UI.Page
     {
         XmlDocument document;
         XmlNodeList nodo;
@@ -28,10 +28,10 @@ namespace SUBEZ.Dependencias
         /// <param name="e"></param>
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataSet dsBeneficiario = new DataSet();
-            dsBeneficiario.ReadXml("C:/xml/benprog.xml");
-            gridBeneficiario.DataSource = dsBeneficiario.Tables[0];
-            gridBeneficiario.DataBind();
+            DataSet dsProgramaVenc = new DataSet();
+            dsProgramaVenc.ReadXml("C:/xml/progVenc.xml");
+            gridProgramaVenc.DataSource = dsProgramaVenc.Tables[0];
+            gridProgramaVenc.DataBind();
 
             DataSet dsprog = new DataSet();
             dsprog.ReadXml("C:/xml/prog.xml");
@@ -39,7 +39,6 @@ namespace SUBEZ.Dependencias
             gridPrograma.DataBind();
 
         }
-
         /// <summary>
         /// Exporta a Excel
         /// </summary>
@@ -68,42 +67,6 @@ namespace SUBEZ.Dependencias
         protected void btnGuardarCambios_Click(object sender, EventArgs e)
         {
             Xporter.WritePdfToResponse();
-        }
-
-        /// <summary>
-        /// Permite la Busquedas ,Filtros y Paginado
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        protected void gridBeneficiario_Load(object sender, EventArgs e)
-        {
-            DataSet dsBeneficiario = new DataSet();
-            dsBeneficiario.ReadXml("C:/xml/benprog.xml");
-            gridBeneficiario.DataSource = dsBeneficiario.Tables[0];
-            gridBeneficiario.DataBind();
-        }
-
-        /// <summary>
-        /// Incripción de beneficiario
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        protected void save_org_prog_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        /// <summary>
-        /// Permite la Busquedas ,Filtros y Paginado
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        protected void gridPrograma_Load(object sender, EventArgs e)
-        {
-            DataSet dsprog = new DataSet();
-            dsprog.ReadXml("C:/xml/prog.xml");
-            gridPrograma.DataSource = dsprog.Tables[0];
-            gridPrograma.DataBind();
         }
 
         /// <summary>
@@ -136,5 +99,32 @@ namespace SUBEZ.Dependencias
             Xporter.WritePdfToResponse();
         }
 
+        /// <summary>
+        /// Permite la Busquedas ,Filtros y Paginado
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        protected void gridProgramaVenc_Load(object sender, EventArgs e)
+        {
+            DataSet dsProgramaVenc = new DataSet();
+            dsProgramaVenc.ReadXml("C:/xml/progVenc.xml");
+            gridProgramaVenc.DataSource = dsProgramaVenc.Tables[0];
+            gridProgramaVenc.DataBind();
+
+        }
+
+        /// <summary>
+        /// Permite la Busquedas ,Filtros y Paginado
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        protected void gridPrograma_Load(object sender, EventArgs e)
+        {
+
+            DataSet dsprog = new DataSet();
+            dsprog.ReadXml("C:/xml/prog.xml");
+            gridPrograma.DataSource = dsprog.Tables[0];
+            gridPrograma.DataBind();
+        }
     }
 }

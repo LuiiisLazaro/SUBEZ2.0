@@ -127,7 +127,8 @@
     <Content Include="Css\treeview\TopLine_rtl.png" />
     <Content Include="Css\treeview\TriState.png" />
     <Content Include="default.aspx" />
-    <Content Include="Dependencias\InscripcionBeneficiariosProgramas.aspx" />
+    <Content Include="Dependencias\AdministracionProgramas.aspx" />
+    <Content Include="Dependencias\AgregarPrograma.aspx" />
     <Content Include="Dependencias\InscripcionBenProg.aspx" />
     <Content Include="Dependencias\InscripcionOrganizacionPrograma.aspx" />
     <Content Include="Image\245.gif" />
@@ -405,12 +406,19 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dependencias\InscripcionBeneficiariosProgramas.aspx.cs">
-      <DependentUpon>InscripcionBeneficiariosProgramas.aspx</DependentUpon>
+    <Compile Include="Dependencias\AdministracionProgramas.aspx.cs">
+      <DependentUpon>AdministracionProgramas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dependencias\InscripcionBeneficiariosProgramas.aspx.designer.cs">
-      <DependentUpon>InscripcionBeneficiariosProgramas.aspx</DependentUpon>
+    <Compile Include="Dependencias\AdministracionProgramas.aspx.designer.cs">
+      <DependentUpon>AdministracionProgramas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dependencias\AgregarPrograma.aspx.cs">
+      <DependentUpon>AgregarPrograma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dependencias\AgregarPrograma.aspx.designer.cs">
+      <DependentUpon>AgregarPrograma.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dependencias\InscripcionBenProg.aspx.cs">
       <DependentUpon>InscripcionBenProg.aspx</DependentUpon>

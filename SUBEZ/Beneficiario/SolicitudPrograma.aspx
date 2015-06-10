@@ -115,14 +115,27 @@
                        onclick="btnGuardarCambios_Click" />
                </div>
                <div class="large-12 columns separa_v" id="Div1">
+               <header>
+                  <h4>Busquedas:</h4>
+               </header>
                    <dx:ASPxGridView ID="gvSolicitudes" runat="server" onload="gvSolicitudes_Load" 
-                       Theme="iOS">
+                       Theme="iOS" AutoGenerateColumns="False">
                        <Settings ShowFilterRow="True" />
+                       <SettingsSearchPanel Visible="True" />
                        <Columns>
-                       <dx:GridViewDataColumn Caption="PROGRAMA" FieldName="Programa" Settings-AllowSort="True"></dx:GridViewDataColumn>
-                       <dx:GridViewDataColumn Caption="PERIODO" FieldName="Periodo" Settings-AllowSort="True"></dx:GridViewDataColumn>
-                       <dx:GridViewDataColumn Caption="ESTADO" FieldName="Estado" Settings-AllowSort="True"></dx:GridViewDataColumn>
+                       <dx:GridViewDataColumn Caption="PROGRAMA" FieldName="Programa" Settings-AllowSort="True">
+<Settings AllowSort="True"></Settings>
+                           </dx:GridViewDataColumn>
+                       <dx:GridViewDataColumn Caption="PERIODO" FieldName="Periodo" Settings-AllowSort="True">
+<Settings AllowSort="True"></Settings>
+                           </dx:GridViewDataColumn>
+                       <dx:GridViewDataColumn Caption="ESTADO" FieldName="Estado" Settings-AllowSort="True">
+<Settings AllowSort="True"></Settings>
+                           </dx:GridViewDataColumn>
                        </Columns>
+                       <SettingsPager PageSize="10">
+                        <PageSizeItemSettings Visible="true" ShowAllItem="true" />
+                        </SettingsPager>
                    </dx:ASPxGridView>
                    <dx:ASPxGridViewExporter ID="Xporter" GridViewID="gvSolicitudes" runat="server"></dx:ASPxGridViewExporter>
                </div>
