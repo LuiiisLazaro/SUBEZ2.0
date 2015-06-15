@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Row>
+		<id>1</id>
+		<Nombre>Secretaria de Educación</Nombre>
+		<Tel_fono>1234567890</Tel_fono>
+		<Primer_Contacto>Lic Carlos Roman</Primer_Contacto>
+	</Row>
+	<Row>
+		<id>2</id>
+		<Nombre>Secreteria de Economía</Nombre>
+		<Tel_fono>1234567890</Tel_fono>
+		<Primer_Contacto>Ing Luis Lázaro</Primer_Contacto>
+	</Row>
+	<Row>
+		<id>3</id>
+		<Nombre>Secretaria de Comunicaciones</Nombre>
+		<Tel_fono>1234567890</Tel_fono>
+		<Primer_Contacto>Ing Luis Blanco</Primer_Contacto>
+	</Row>
+	<Row>
+		<id>4</id>
+		<Nombre>Secretaria de Relaciones Exteriores</Nombre>
+		<Tel_fono>1234567890</Tel_fono>
+		<Primer_Contacto>Ing Alejandro Peralta</Primer_Contacto>
+	</Row>
+</Root>

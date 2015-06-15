@@ -12,10 +12,10 @@ namespace SUBEZ.Administrador
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataSet ds = new DataSet();
+            /*DataSet ds = new DataSet();
             ds.ReadXml(@"../../../../../XML/BeneficiarioLogin.xml");
             ASPxGridView1.DataSource = ds.Tables[0];
-            ASPxGridView1.DataBind();
+            ASPxGridView1.DataBind();*/
         }
     }
 }

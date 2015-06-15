@@ -4,6 +4,8 @@
 <%@ Register Assembly="DevExpress.Web.v15.1, Version=15.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web" TagPrefix="dx" %>
 
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
@@ -47,104 +49,86 @@
     <script type="text/javascript" charset="UTF-8" src="./SUBEZ_files/util.js"></script>
     <script type="text/javascript" charset="UTF-8" src="./SUBEZ_files/stats.js"></script>
     <script language="javascript" type="text/javascript">
-// <![CDATA[
-
-function upload-foto_onclick() {
-
-}
-
-// ]]>
     </script>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-        <header class="row contenedor_gral" id="arriba">
+<form id="form1" runat="server">
+
+    <header class="row contenedor_gral" id="arriba">
          <div class="large-3">
-            <img src="../Image/SeZac.jpg">
+            <img src="../Image/SeZac.jpg" />
          </div>
          <hr>
-      </header>
-     
-        <nav class="main-navigation" role="navigation">
-            <ul >
-                  <li class="current"><a href="InfomarcionPersonal.aspx" class="no-submenu"><span class="awe-user"></span>Dependencia</a></li>
-                  <li class="current"><a href="InfoEscolar.aspx" class="no-submenu"><span class="awe-book"></span>Encargados de dependencia</a></li>
-                  <li class="current"><a href="SolicitudBeca.aspx" class="no-submenu"><span class="awe-file"></span>Años fiscales</a></li>
-                  <li class="current"><a href="Configuracion.aspx" class="no-submenu"><span class="awe-cogs"></span>Ayuda</a></li>
-                  <li class="current"><a href="#" class="no-submenu" id="logout"><span class="awe-signout"></span>Cerrar sesión</a></li>
-            </ul>
-        </nav>
-        </header>
-        <header>
-            
-               <div class="side-note-container">
-                  <h2>Alta Encargado de Dependencia</h2>
-               </div>
-               <div class="side-note-bottom"></div>
-           
-           
-        </header>
-         <hr>
+      </header>    
+      <div class="row contenedor_gral">
+        <section class="large-3 columns" role="main"> 
+            <div class="navigation-block affix-top"> 
+                <section class="usuario">
+                  <figure> <img src="../Image/perfil.jpg">
+                    <figcaption><strong><a class=""><asp:Label ID="lblNombre" runat="server" Text="Luis Angel Hernández Lázaro"></asp:Label></a></strong> 
+                     <em><asp:Label ID="lblcurp" runat="server" Text="HELL920809HVZRZS07"></asp:Label></em>
+                     <em><asp:Label ID="lbltipo" runat="server" Text="Aspirante"></asp:Label></em> 
+                      </figcaption>
+                  </figure>
+                </section>
+                    <nav class="main-navigation" role="navigation">
+                      <ul>
+                                                                                    <li class="current"><a href="administracionDependencias.aspx" class="no-submenu"><span class="awe -user"></span>Dependencia</a></li>
+                  <li><a href="AltaEncargadoDep.aspx" class="no-submenu"><span class="awe-book"></span>Encargado de Dependencia</a></li>                  
+                  <li><a href="registroAnios.aspx" class="no-submenu"><span class="awe-cogs"></span>Año fiscal</a></li>
+                  <li><a href="help.aspx" class="no-submenu"><span class="awe-file"></span>Ayuda</a></li>
+                  <li><a href="#" class="no-submenu" id="logout"><span class="awe-signout"></span>Cerrar sesión</a></li>
 
-
-        <div id="holder" class="draag">
-            <div style="margin-top: 30px; margin-bottom: auto;">
-                <label>
-                    Busqueda
-                    <input type="text" placeholder="QUE BUSCAS?" readonly />
-                </label>
-                <label class="control-label">
-                    <span class="info-pop" title="¿Qué significa?" data-content="Estado civil del aspirante.">
-                    </span>Criterio</label>
-                <div class="controls">
-                    <select id="edo_civ" class="input-xlarge rq" onclick="return edo_civ_onclick()">
-                        <option value=" ">Selecciona Dependencia</option>
-                        <option value="1">Dependencia 1</option>
-                        <option value="2">Dependencia 2</option>
-                        <option value="3">Dependencia 3</option>
-                        <option value="4">Dependencia 4</option>
-                        <option value="5">Dependencia 5</option>
-                        <option value="6">Dependencia 6</option>
-                    </select>
-                </div>
-                <button class="btn btn-flat btn-primary button expand" id="upload-foto" onclick="return upload-foto_onclick()"
-                    onclick="return upload-foto_onclick()">
-                    Agregar Encargado</button>
-                <button class="btn btn-flat btn-primary button expand" id="Button1" onclick="return upload-foto_onclick()"
-                    onclick="return upload-foto_onclick()">
-                    Actualizar Encargado</button>
-                <button class="btn btn-flat btn-primary button expand" id="Button2" onclick="return upload-foto_onclick()"
-                    onclick="return upload-foto_onclick()">
-                    Guardar Cambios</button>
-
-          <table>
-             <tr>
-                <td>
-                    <dx:ASPxGridView ID="ASPxGridView1" runat="server" Theme="DevEx" 
-                       EnableTheming="True" AutoGenerateColumns="False">
-                        <Columns>
-                            <dx:GridViewDataColumn Caption="Nombre" FieldName="UserName" Settings-AllowSort="True"   VisibleIndex="0">
-                            </dx:GridViewDataColumn>
-                        </Columns>
-                        <Settings ShowFilterRow="True" />
-                    </dx:ASPxGridView>
-                </td>
-            </tr>
-        </table>
-
+                      </ul>
+                    </nav>
             </div>
+        </section>  
 
-        </div>
-        <div class="progress progress-success progress-striped active" style="margin-bottom: 9px;">
-            <div class="bar" id="progreso">
+
+       <!-- SECCION TABLA -->
+
+         <div class="small-12 medium-12 large-9 columns borde_contenedor" role="main">
+            <div class="large-12 columns separa_v borde_contenedor">
+               <header>
+                  <h4>Administración Encargados de Dependencias</h4>
+                  <hr>
+               </header>
+               <div class="large-12 columns separa_v" id="mis_s">
+                  <a href="RegistrosEncargados.aspx">
+                            <dx:ASPxButton ID="ASPxButton1" runat="server" Text="Agregar Encargado de Dependencia" 
+                                Theme="Office2003Olive">
+                            </dx:ASPxButton>
+                        </a>
+                            <dx:ASPxButton ID="ASPxButton2" runat="server" Text="Actualizar Encargado" 
+                                Theme="Office2003Olive">
+                            </dx:ASPxButton>
+                            <dx:ASPxButton ID="ASPxButton3" runat="server" Text="Guardar Cambios" 
+                                Theme="Office2003Olive" Width="124px">
+                            </dx:ASPxButton>
+                                <dx:ASPxGridView class="large-15 columns separa_v" ID="ASPxGridView1" runat="server" Theme="DevEx" 
+                                    EnableTheming="True" AutoGenerateColumns="False">
+                                   <Columns>
+                                    <dx:GridViewDataColumn Caption="Nombre Encargado" FieldName="nombre" Settings-AllowSort="True"   VisibleIndex="0">
+                                    </dx:GridViewDataColumn>
+                                    <dx:GridViewDataColumn Caption="Estado" FieldName="estado" Settings-AllowSort="True"   VisibleIndex="0">
+                                    </dx:GridViewDataColumn>
+                                    <dx:GridViewDataColumn Caption="Dependencia" FieldName="telefonoOficina" Settings-AllowSort="True"   VisibleIndex="0">
+                                    </dx:GridViewDataColumn>
+                                    <dx:GridViewDataColumn Caption="Departamento" FieldName="fechaAlta" Settings-AllowSort="True"   VisibleIndex="0">
+                                    </dx:GridViewDataColumn>
+                                    <dx:GridViewDataColumn Caption="Correo Electrónico" FieldName="correoElectronico" Settings-AllowSort="True"   VisibleIndex="0">
+                                    </dx:GridViewDataColumn>
+                                    <dx:GridViewDataColumn Caption="Teléfono Oficina" FieldName="telefonoOficina" Settings-AllowSort="True"   VisibleIndex="0">
+                                    </dx:GridViewDataColumn>
+                                </Columns>
+                            <Settings ShowFilterRow="True" />
+                            </dx:ASPxGridView>
+                            </div>
             </div>
-        </div>
-        <footer class="info" style="margin: 0px;">
-                     <h5>Tamaño recomendado 200 x 200 pixeles.</h5>
-                  </footer>
-    </div>
-    </div>
-    </form>
+            </div>
+        </div> 
+
+     </form>
 </body>
 </html>
+

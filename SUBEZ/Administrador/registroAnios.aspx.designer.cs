@@ -10,16 +10,16 @@
 namespace SUBEZ.Administrador {
     
     
-    public partial class AdministracionDependencias {
+    public partial class registroAnios {
         
         /// <summary>
-        /// Control form1.
+        /// Control Form1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm Form1;
         
         /// <summary>
         /// Control lblNombre.
@@ -49,39 +49,39 @@ namespace SUBEZ.Administrador {
         protected global::System.Web.UI.WebControls.Label lbltipo;
         
         /// <summary>
-        /// Control ASPxButton1.
+        /// Control txtNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxButton ASPxButton1;
+        protected global::System.Web.UI.WebControls.TextBox txtNombre;
         
         /// <summary>
-        /// Control ASPxButton2.
+        /// Control txtInicio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxButton ASPxButton2;
+        protected global::System.Web.UI.WebControls.Calendar txtInicio;
         
         /// <summary>
-        /// Control ASPxButton3.
+        /// Control txtFinal.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxButton ASPxButton3;
+        protected global::System.Web.UI.WebControls.Calendar txtFinal;
         
         /// <summary>
-        /// Control ASPxGridView1.
+        /// Control btnSave.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxGridView ASPxGridView1;
+        protected global::System.Web.UI.WebControls.Button btnSave;
     }
 }

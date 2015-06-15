@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Companys>
   <Company>
     <Id>1</Id>
@@ -16,18 +16,21 @@
     <Type>Beneficiario</Type>
     <Calle>Gardenias</Calle>
     <NumExt>#21</NumExt>
-    <NumInt></NumInt>
+    <NumInt>
+    </NumInt>
     <CalleEntre>Fresnos</CalleEntre>
     <CalleEntre2>Margaritas</CalleEntre2>
     <CalleEntre3>Margaritas2</CalleEntre3>
     <EntidadFed>Veracruz</EntidadFed>
-    <Delegacion>Jalapa</Delegacion>
-    <Localidad></Localidad>
-    <Localidad2></Localidad2>
-    <CP>99000</CP>
+    <Delegacion>m0</Delegacion>
+    <Localidad>l0</Localidad>
+    <Localidad2>l0</Localidad2>
+    <CP>l0</CP>
     <Asentamiento>Colonia</Asentamiento>
-    <Latitud></Latitud>
-    <Longuitud></Longuitud>
+    <Latitud>
+    </Latitud>
+    <Longuitud>
+    </Longuitud>
   </Company>
   <Company>
     <Id>2</Id>
@@ -45,19 +48,22 @@
     <Type>Beneficiario</Type>
     <Calle>Gardenias</Calle>
     <NumExt>#21</NumExt>
-    <NumInt></NumInt>
+    <NumInt>
+    </NumInt>
     <CalleEntre>Fresnos</CalleEntre>
     <CalleEntre2>Margaritas</CalleEntre2>
     <CalleEntre3>Margaritas2</CalleEntre3>
     <EntidadFed>Veracruz</EntidadFed>
     <Delegacion>Jalapa</Delegacion>
-    <Localidad></Localidad>
-    <Localidad2></Localidad2>
+    <Localidad>
+    </Localidad>
+    <Localidad2>
+    </Localidad2>
     <CP>99000</CP>
     <Asentamiento>Colonia</Asentamiento>
-    <Latitud></Latitud>
-    <Longuitud></Longuitud>
+    <Latitud>
+    </Latitud>
+    <Longuitud>
+    </Longuitud>
   </Company>
-
-
 </Companys>

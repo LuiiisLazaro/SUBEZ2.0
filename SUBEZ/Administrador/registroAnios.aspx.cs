@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SUBEZ.Administrador
 {
-    public partial class AdministracionDependencias : System.Web.UI.Page
+    public partial class registroAnios : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
